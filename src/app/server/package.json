@@ -9,9 +9,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.16.2",
     "bcrypt": "^1.0.2",
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
+    "jmespath": "^0.15.0",
     "jsonwebtoken": "^7.4.1",
     "mysql": "^2.13.0",
     "promise-mysql": "^3.0.2",
