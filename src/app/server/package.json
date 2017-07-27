@@ -1,20 +1,21 @@
 {
-  "name": "api-transformer",
+  "name": "server",
   "version": "1.0.0",
-  "description": "RESTful API that makes requests to another API and transforms response",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js --exec babel-node --presets es2015,stage-2"
   },
-  "author": "Matanel Hazan",
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/matthayzon/api-transformer"
-  },
-  "license": "MIT",
+  "author": "",
+  "license": "ISC",
   "dependencies": {
+    "bcrypt": "^1.0.2",
     "body-parser": "^1.17.2",
-    "express": "^4.15.3"
+    "express": "^4.15.3",
+    "jsonwebtoken": "^7.4.1",
+    "mysql": "^2.13.0",
+    "promise-mysql": "^3.0.2",
+    "validator": "^8.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",

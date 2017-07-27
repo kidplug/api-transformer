@@ -1,0 +1,46 @@
+#navigation {
+  border-radius:0;
+  border:none;
+  margin:0;
+
+  .navbar-header {
+    .navbar-toggle {
+
+    }
+  }
+
+  .navbar-collapse {
+    ul.nav {
+      float:none;
+      margin:0 auto;
+      padding: 5px 0;
+      display: block;
+      text-align: center;
+
+      li {
+        float:left;
+        color:#fff;
+
+        .fa {
+          font-size:22px;
+        }
+
+        a {
+          color:#fff;
+        }
+      }
+
+      li.nav-thumbnail {
+        height:35px;
+        width:35px;
+        margin-top:7px;
+        background-position:center center;
+        background-size:100% auto;
+      }
+    }
+  }
+}
+
+.nav-wrapper {
+  background:#222;
+}
