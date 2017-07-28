@@ -2,58 +2,75 @@
   position:relative;
   float:left;
   width:100%;
-  padding:20px 0 0 0;
   background-image: url('http://wallpapercave.com/wp/LjkMIft.jpg');
   background-position:center center;
   font-family:"Courier New", Arial, sans-serif;
 
   .homePage-overlay {
-
-    .output-label {
-      font-size:17px;
-      letter-spacing:1.5px;
-      padding: 0 0 20px 10px;
-    }
     width:100%;
-    min-height:1500px;
     float:left;
-    background: rgba(0,0,0,0.7);
-    padding:0 125px 50px 125px;
+    background: rgba(0,0,0,0.8);
+    padding:20px 0 100px 0;
     color:#fff;
 
-    pre {
-      overflow: scroll;
-      border:2px solid #00acff;
-      padding: 30px;
-      height:700px;
-      background: rgba(0,0,0,0.5);
-      color:#4dc71f;
-      line-height:25px;
-    }
-  }
-
-  .row {
     .container {
+      .row.error-wrapper {
+        padding:20px;
 
-      .error-message {
-        border:2px solid red;
-        padding: 20px 0;
-        text-align:center;
-        color:red;
-        letter-spacing:1.5px;
-        font-size:16px;
-      }
-
-      .buttons {
-        margin:0 auto;
-        float:none;
-        padding:50px 0 100px 0;
-
-        .btn {
-          font-size:14px;
-
+        .error-message {
+          border:2px solid red;
+          max-width:300px;
+          height:60px;
+          padding:0 40px;
+          line-height:60px;
+          text-align:center;
+          color:red;
+          letter-spacing:1.5px;
+          font-size:16px;
         }
       }
+
+      .row.buttons-wrapper {
+        padding:30px 0 0 0;
+
+        .buttons {
+          .button-wrapper {
+            padding:0 15px 20px 15px;
+
+            .btn {
+              width:100%;
+              font-size:14px;
+            }
+          }
+        }
+      }
+
+      .row.output-wrapper {
+        padding:20px 0 0 0;
+
+        .output-inner-wrapper {
+          padding-top:20px;
+
+          .output-label {
+            font-size:17px;
+            letter-spacing:1.5px;
+            padding: 0 0 20px 10px;
+          }
+
+          .output-body {
+            pre {
+              overflow: scroll;
+              border:3px solid #00acff;
+              padding: 30px;
+              height:700px;
+              background: rgba(0,0,0,0.5);
+              color:#4dc71f;
+              line-height:25px;
+            }
+          }
+        }
+      }
+
     }
   }
 }

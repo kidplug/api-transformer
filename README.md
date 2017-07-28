@@ -4,10 +4,9 @@ API Transformer
 
 ## Description
 
-The API Transformer is an basic RESTful API implementation that allows for the consumption and transformation of an intermediary third party API.
+The API Transformer is a basic RESTful API implementation that allows for the consumption and transformation of an intermediary third party API.
 
-Note, I've included a react front end to make it easy to compare the original and the transformed payloads
-
+Note, the server is coupled with a react client to facilitate the comparing of the original and the transformed payloads
 
 
 

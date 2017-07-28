@@ -14,10 +14,10 @@ router.get('/:type', (req, res) => {
 
             switch(type) {
                 case "people":
-                    transformed = jmespath.search(response.data, "results[*].{fullName: name, weight: mass, height : height, movies : films }");
+                    transformed = jmespath.search(response.data, "results[*].{ fullName: name, weight: mass, height: height, movies: films }");
                     break;
                 case "starships":
-                    transformed = jmespath.search(response.data, "results[*].{shipName: name, model: model, maxPassengers: passengers, movies : films }");
+                    transformed = jmespath.search(response.data, "results[*].{ shipName: name, model: model, maxPassengers: passengers, movies: films }");
                     break;
                 default:
                     res.status(400).send({ error : "Bad API request, endpoint not found." });
@@ -25,7 +25,7 @@ router.get('/:type', (req, res) => {
             }
             res.send({original: response.data, transformed: transformed });
         })
-        .catch( (error) => {
+        .catch( () => {
             res.status(400).send({ error : "Bad API request" });
         });
 });
